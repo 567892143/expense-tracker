@@ -11,7 +11,8 @@ function App() {
 
   return (
   <div className="App">
-    <h1>{message}</h1>
+    <h1>Messsage from backend</h1>
+    <h1>Fetching :{message}</h1>
   </div>
   );
 }
