@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("https://YOUR_BACKEND_URL.com")
+    fetch("https://expense-tracker-hq0y.onrender.com/")
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   },[]);
