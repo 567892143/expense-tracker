@@ -6,8 +6,9 @@ require("dotenv").config();
 
 // middleware
 const corsOptions = {
-    origin: "https://expense-tracker-1-4tlp.onrender.com/" 
-}
+    origin: "https://expense-tracker-1-4tlp.onrender.com", // Frontend origin URL
+    optionsSuccessStatus: 200 // Some legacy browsers (IE11) might choke on 204
+};
 app.use(express.json());
 app.use(cors(corsOptions));
 // Simple route to send message to frontend
