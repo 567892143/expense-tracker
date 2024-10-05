@@ -6,7 +6,7 @@ require("dotenv").config();
 
 // middleware
 const corsOptions = {
-    origin: "http://localhost:3000" 
+    origin: "https://expense-tracker-1-4tlp.onrender.com/" 
 }
 app.use(express.json());
 app.use(cors(corsOptions));
