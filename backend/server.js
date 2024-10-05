@@ -10,7 +10,10 @@ const corsOptions = {
 }
 app.use(express.json());
 app.use(cors(corsOptions));
-
+// Simple route to send message to frontend
+app.get("/api/message", (req, res) => {
+    res.json({ message: "Hello from the backend!" });
+});
 // connect MongoDB
 mongoose.connect("mongodb+srv://dinesh:test123@expensetrac.8jvbw.mongodb.net/?retryWrites=true&w=majority&appName=expensetrac").then(() => {
     const PORT = 8000
